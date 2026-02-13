@@ -1,2 +1,176 @@
-# Landing-page-
-Smooth background 
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Abhishek Sharma | Web Developer</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+
+body{
+ background:linear-gradient(135deg,#141e30,#243b55);
+ color:white;
+ scroll-behavior:smooth;
+}
+
+/* Navbar */
+nav{
+ position:fixed;
+ width:100%;
+ top:0;
+ background:rgba(0,0,0,0.7);
+ padding:15px;
+ text-align:center;
+ backdrop-filter:blur(10px);
+}
+
+nav a{
+ color:white;
+ margin:20px;
+ text-decoration:none;
+ font-weight:bold;
+ font-size:18px;
+ transition:0.3s;
+}
+
+nav a:hover{
+ color:#00f7ff;
+}
+
+/* Hero */
+.hero{
+ height:100vh;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ text-align:center;
+}
+
+.hero h1{
+ font-size:50px;
+ margin-bottom:15px;
+}
+
+.hero p{
+ font-size:20px;
+ margin-bottom:20px;
+}
+
+.btn{
+ padding:15px 30px;
+ border:none;
+ background:#00f7ff;
+ color:black;
+ font-size:18px;
+ border-radius:30px;
+ cursor:pointer;
+ transition:0.3s;
+}
+
+.btn:hover{
+ background:white;
+ transform:scale(1.1);
+}
+
+/* Sections */
+section{
+ padding:100px 20px;
+ text-align:center;
+}
+
+.services{
+ display:flex;
+ flex-wrap:wrap;
+ justify-content:center;
+}
+
+.card{
+ background:rgba(255,255,255,0.1);
+ margin:15px;
+ padding:25px;
+ width:250px;
+ border-radius:15px;
+ transition:0.3s;
+}
+
+.card:hover{
+ transform:translateY(-10px);
+ background:rgba(255,255,255,0.2);
+}
+
+/* Contact */
+.contact p{
+ margin:10px;
+ font-size:18px;
+}
+
+/* Footer */
+footer{
+ background:black;
+ padding:20px;
+ margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- HOME -->
+<div class="hero" id="home">
+<h1>Abhishek Sharma</h1>
+<p>Web Development Intern | Oasis Infobyte</p>
+<p>Creating modern and responsive websites</p>
+<button class="btn">Hire Me</button>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+<h2>My Services</h2>
+<br>
+<div class="services">
+
+<div class="card">
+<h3>Website Design</h3>
+<p>Modern and responsive website design using HTML & CSS.</p>
+</div>
+
+<div class="card">
+<h3>Landing Pages</h3>
+<p>Professional landing pages for business and portfolio.</p>
+</div>
+
+<div class="card">
+<h3>Frontend Projects</h3>
+<p>Beginner friendly web projects with clean UI.</p>
+</div>
+
+<div class="card">
+<h3>UI Styling</h3>
+<p>Stylish user interface with animations and colors.</p>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+<h2>Contact Me</h2>
+<p>Email: abhishek@email.com</p>
+<p>Phone: 9876543210</p>
+<p>Location: India</p>
+</section>
+
+<footer>
+<p>© 2026 Abhishek Sharma | Web Developer</p>
+</footer>
+
+</body>
+</html>
